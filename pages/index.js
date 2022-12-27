@@ -79,7 +79,7 @@ export default function Home() {
 
         <div className='bg-white p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
           <h1 className='font-Legend font-medium text-center text-[#111928] text-[18px] lg:text-[22px] xl:text-[28px] 2xl:text-[30px]'>65+</h1>
-          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Company's</p>
+          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Company&lsquo;s</p>
         </div>
 
 
