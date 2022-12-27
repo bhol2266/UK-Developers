@@ -45,7 +45,7 @@ function Navbar() {
 
     return (
 
-        <div className='p-2  shadow-md  lg:py-4 2xl:py-6'>
+        <div className='p-2   lg:py-4 2xl:py-6 shadow-lg shadow-gray-800'>
 
 
             <div>
@@ -59,7 +59,7 @@ function Navbar() {
                                 <div className='flex  items-center justify-between'>
 
                                     <Link href='/'>
-                                        <p className='text-textMain  align-center text-center  font-Abhayalibre font-bold  text-3xl pl-1 pr-1 cursor-pointer lg:text-left lg:ml-8 ml-3  2xl:ml-[100px] '>Sheppards</p>
+                                        <p className='text-textMain  align-center text-center  font-Abhayalibre font-bold  text-3xl  cursor-pointer lg:text-left lg:ml-8 ml-3  2xl:ml-[100px] '>Sheppards</p>
                                     </Link>
 
 
