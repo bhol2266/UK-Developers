@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundImage: {
-      banner: "url('/homepageImages/banner.png')",
+      banner: "url('/homepage_bg.png')",
       banner_wide: "url('/homepageImages/banner-wide.png')",
     },
     extend: {
@@ -66,6 +66,8 @@ module.exports = {
         'Olive': "#808000",
         'DarkBlue': "#00008B",
         'Purple': "#800080",
+        'textMain': "#212B36",
+        'textSub': "#4B5563",
 
       },
       fontFamily: {
@@ -91,8 +93,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide', '@tailwindcss/line-clamp','tailwind-scrollbar')],
-    
+    require('tailwind-scrollbar-hide', '@tailwindcss/line-clamp', 'tailwind-scrollbar')],
+
 
 
 }
