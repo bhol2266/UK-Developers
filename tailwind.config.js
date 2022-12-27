@@ -81,6 +81,7 @@ module.exports = {
         SFuiDisplay: ['SF UI Display'],
         Abhayalibre: ['Abhaya Libre'],
         Mont: ['Montserrat'],
+        Legend: ['Lexend'],
 
       }
     },
