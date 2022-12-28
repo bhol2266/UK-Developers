@@ -8,6 +8,11 @@ module.exports = {
       banner_wide: "url('/homepageImages/banner-wide.png')",
     },
     extend: {
+      gradientColorStops: theme => ({
+        'primary': '#FF8C00',
+        'secondary': '#FFA500',
+        'danger': '#FFD700',
+    }),
       animation: {
         spii: 'wiggle 2s linear infinite',
         movement: 'movement 1s linear 1',

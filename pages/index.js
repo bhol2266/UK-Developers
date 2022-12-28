@@ -1,6 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
 import ServiceItem from '../components/ServiceItem'
+
+
+const allServices = [
+  { image: "./services/Webapplication.png", title: "Web application", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Websitess.png", title: "Websites", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Marketing.png", title: "Marketing", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Automation.png", title: "Automation", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Analytics.png", title: "Analytics", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Datavisualization.png", title: "Data visualization", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Cloud.png", title: "Cloud", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Mobileapps.png", title: "Mobile apps", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/E-commerce.png", title: "E-commerce", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Devops.png", title: "Devops", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/UXUIConsultancy.png", title: "UX/UI Consultancy", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Dataextraction.png", title: "Data extraction", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+
+]
 
 
 export default function Home() {
@@ -61,29 +79,58 @@ export default function Home() {
 
       </div>
 
-      <div className='bg-[#F4FBFF] py-6 mt-16 lg:mt-24 flex items-center justify-between lg:justify-around px-[20px] sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[100px]'>
-        <div className='bg-white p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
+      <div className='bg-[#F4FBFF] py-6 mt-16 lg:mt-24 flex items-center justify-between lg:justify-around px-[14px] sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[100px] space-x-3'>
+
+        <div className='bg-white p-[12px] lg:p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
           <h1 className='font-Legend font-medium text-center text-[#111928] text-[18px] lg:text-[22px] xl:text-[28px] 2xl:text-[30px]'>65+</h1>
-          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Clients</p>
+          <p className='font-inter text-[#4B5563] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Clients</p>
         </div>
 
-        <div className='bg-white p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
+        <div className='bg-white p-[12px] lg:p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
           <h1 className='font-Legend font-medium text-center text-[#111928] text-[18px] lg:text-[22px] xl:text-[28px] 2xl:text-[30px]'>85+</h1>
-          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Projects</p>
+          <p className='font-inter text-[#4B5563] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Projects</p>
         </div>
 
-        <div className='bg-white p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
+        <div className='bg-white p-[12px] lg:p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
           <h1 className='font-Legend font-medium text-center text-[#111928] text-[18px] lg:text-[22px] xl:text-[28px] 2xl:text-[30px]'>25+</h1>
-          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Countrys</p>
+          <p className='font-inter text-[#4B5563] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Countrys</p>
         </div>
 
-        <div className='bg-white p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
+        <div className='bg-white p-[12px] lg:p-[20px] rounded-[20px] flex flex-col items-center justify-center w-fit'>
           <h1 className='font-Legend font-medium text-center text-[#111928] text-[18px] lg:text-[22px] xl:text-[28px] 2xl:text-[30px]'>65+</h1>
-          <p className='font-inter text-[#4B5563] text-center text-[13px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Company&lsquo;s</p>
+          <p className='font-inter text-[#4B5563] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto'>Company&lsquo;s</p>
         </div>
+
+
+
+
+
 
 
       </div>
+
+
+      {/* Whatwe offer  */}
+      <div className='mt-12 lg:mt-24 px-[14px] py-12 lg:py-[80px] xl:py-[100px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] backgroundCustomCss'>
+        <h1 className='font-Legend font-medium text-center text-[#FFFFFF] text-[24px] lg:text-[28px] xl:text-[36px] 2xl:text-[38px] '>What we offer ?</h1>
+        <p className='font-inter text-[#FFFFFF] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 xl:w-4/5'>Providing the best user experience to your users and directly targeting the problem that was intended to solve, our softwares and applications are not only performant as compared.&lsquo;s</p>
+
+
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-12 lg:mt-24 gap-10 md:gap-12 xl:gap-[50px]'>
+          {allServices.map(item => {
+
+            return (
+              <SericeItem_What_we_offer image={item.image} description={item.description} title={item.title} />
+
+            )
+          })}
+
+        </div>
+
+      </div>
+
+
+
 
 
 
