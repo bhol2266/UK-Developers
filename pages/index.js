@@ -48,9 +48,9 @@ export default function Home() {
 
         {/* Services */}
         <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[70px] md:gap-[100px] xl:gap-[120px] 2xl:gap-[150px] '>
-          <ServiceItem image="./services/MobileApps.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
+          <ServiceItem image="./services/MobApp.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
           <ServiceItem image="./services/Websites.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Websites & Apps" />
-          <ServiceItem image="./services/Analytics.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
+          <ServiceItem image="./services/Anal.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
           <ServiceItem image="./services/Pricing.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Pricing" />
         </div>
 
@@ -120,7 +120,7 @@ export default function Home() {
           {allServices.map(item => {
 
             return (
-              <SericeItem_What_we_offer image={item.image} description={item.description} title={item.title} />
+              <SericeItem_What_we_offer key={item.title} image={item.image} description={item.description} title={item.title} />
 
             )
           })}
