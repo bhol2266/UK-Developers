@@ -24,7 +24,7 @@ const Portfolio = () => {
                 <div className="shadow-lg pb-5">
                     <img src="./portfolio/closm.svg" alt="" className="w-full mb-2" />
 
-                    <a target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
+                    <a  rel="noreferrer" target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
 
                     <h1 className='font-inter block font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] my-2'>Clothing</h1>
 
@@ -36,7 +36,7 @@ const Portfolio = () => {
                 <div className="shadow-lg pb-5">
                     <img src="./portfolio/closm.svg" alt="" className="w-full mb-2" />
 
-                    <a target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
+                    <a  rel="noreferrer" target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
 
                     <h1 className='font-inter block font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] my-2'>Clothing</h1>
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
                 <div className="shadow-lg pb-5">
                     <img src="./portfolio/closm.svg" alt="" className="w-full mb-2" />
 
-                    <a target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
+                    <a  rel="noreferrer" target="_blank" href="http://closm.com/" className='font-inter font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]'>www.closm.com</a>
 
                     <h1 className='font-inter block font-medium text-left text-textMain text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] my-2'>Clothing</h1>
 
