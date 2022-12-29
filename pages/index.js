@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Portfolio from '../components/Portfolio'
 import Pricing from '../components/Pricing'
 import Quatation from '../components/Quatation'
 import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
@@ -139,10 +140,12 @@ export default function Home() {
 
       </div>
 
-        {/* Get Free Quatation  */}
-        <div className='px-[14px] py-12 lg:py-[60px] xl:py-[80px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] '>
-          <Quatation />
-        </div>
+      {/* Get Free Quatation  */}
+      <div className='px-[14px] py-12 lg:py-[60px] xl:py-[80px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] '>
+        <Quatation />
+
+        <Portfolio />
+      </div>
 
 
 
