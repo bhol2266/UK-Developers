@@ -1,22 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Pricing from '../components/Pricing'
 import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
 import ServiceItem from '../components/ServiceItem'
 
 
 const allServices = [
-  { image: "./services/Webapplication.png", title: "Web application", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Websitess.png", title: "Websites", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Marketing.png", title: "Marketing", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Automation.png", title: "Automation", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Analytics.png", title: "Analytics", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Datavisualization.png", title: "Data visualization", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Cloud.png", title: "Cloud", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Mobileapps.png", title: "Mobile apps", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/E-commerce.png", title: "E-commerce", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Devops.png", title: "Devops", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/UXUIConsultancy.png", title: "UX/UI Consultancy", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Dataextraction.png", title: "Data extraction", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Webapplication.svg", title: "Web application", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Websitess.svg", title: "Websites", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Marketing.svg", title: "Marketing / SEO", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Automation.svg", title: "Automation", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Analytics.svg", title: "Analytics", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Datavisualization.svg", title: "Data visualization", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Cloud.svg", title: "Cloud", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Mobileapps.svg", title: "Mobile apps", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/E-commerce.svg", title: "E-commerce", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Devops.svg", title: "Devops", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/UXUIConsultancy.svg", title: "UX/UI Consultancy", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Dataextraction.svg", title: "Data extraction", description: "Do you need applications or any kind of software that can run independent of platform. day." },
 
 ]
 
@@ -47,7 +48,7 @@ export default function Home() {
 
 
         {/* Services */}
-        <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[70px] md:gap-[100px] xl:gap-[120px] 2xl:gap-[150px] '>
+        <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
           <ServiceItem image="./services/MobApp.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
           <ServiceItem image="./services/Websites.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Websites & Apps" />
           <ServiceItem image="./services/Anal.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
@@ -127,7 +128,17 @@ export default function Home() {
 
         </div>
 
+
+        {/* Pricing  */}
+
+        <div className='mt-14 lg:mt-28'>
+          <Pricing />
+        </div>
+
+
       </div>
+
+
 
 
 
