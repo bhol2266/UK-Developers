@@ -21,7 +21,7 @@ const Pricing = () => {
             <div className='lg:mt-12 xl:mt-[80px] flex flex-col px-[40px] sm:px-[80px] md:px-[100px] lg:flex-row lg:px-[1px] lg:space-x-8 xl:space-x-8 2xl:space-x-14 2xl:px-[1px] 3xl:px-[150px]'>
 
 
-                <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-white border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
+                <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
                     <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$150</h1>
 
 
@@ -69,7 +69,7 @@ const Pricing = () => {
                 </div>
 
 
-                <div className='relative lg:bottom-10 xl:bottom-14  lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-white border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
+                <div className='relative lg:bottom-10 xl:bottom-14  lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
                     <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$500</h1>
 
 
@@ -117,7 +117,7 @@ companies or businesses. </h2>
                 </div>
 
 
-                <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-white border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
+                <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
                     <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$2000</h1>
 
 

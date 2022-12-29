@@ -48,7 +48,7 @@ export default function Home() {
 
 
         {/* Services */}
-        <div className='mt-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
+        <div className='relative bottom-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
           <ServiceItem image="./services/MobApp.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
           <ServiceItem image="./services/Websites.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Websites & Apps" />
           <ServiceItem image="./services/Anal.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
