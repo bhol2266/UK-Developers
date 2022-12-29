@@ -119,7 +119,7 @@ export default function Home() {
         <p className='font-inter text-[#FFFFFF] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 xl:w-4/5'>Providing the best user experience to your users and directly targeting the problem that was intended to solve, our softwares and applications are not only performant as compared.&lsquo;s</p>
 
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-12 lg:mt-24 gap-10 md:gap-12 xl:gap-[50px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-12 lg:mt-24 gap-10 md:gap-12 xl:gap-[50px] md:pl-10 sm:pl-6 lg:pl-12 xl:pl-16'>
           {allServices.map(item => {
 
             return (
