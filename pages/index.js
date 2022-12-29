@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Pricing from '../components/Pricing'
+import Quatation from '../components/Quatation'
 import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
 import ServiceItem from '../components/ServiceItem'
 
@@ -48,7 +49,7 @@ export default function Home() {
 
 
         {/* Services */}
-        <div className='relative bottom-4 bg-white grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
+        <div className='relative bottom-4  grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
           <ServiceItem image="./services/MobApp.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
           <ServiceItem image="./services/Websites.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Websites & Apps" />
           <ServiceItem image="./services/Anal.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
@@ -137,6 +138,12 @@ export default function Home() {
 
 
       </div>
+
+        {/* Get Free Quatation  */}
+        <div className='px-[14px] py-12 lg:py-[60px] xl:py-[80px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] '>
+          <Quatation />
+        </div>
+
 
 
 
