@@ -8,18 +8,20 @@ import ServiceItem from '../components/ServiceItem'
 
 
 const allServices = [
-  { image: "./services/Webapplication.svg", title: "Web application", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Websitess.svg", title: "Websites", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Marketing.svg", title: "Marketing / SEO", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Automation.svg", title: "Automation", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Analytics.svg", title: "Analytics", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Datavisualization.svg", title: "Data visualization", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Cloud.svg", title: "Cloud", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Mobileapps.svg", title: "Mobile apps", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/E-commerce.svg", title: "E-commerce", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Devops.svg", title: "Devops", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/UXUIConsultancy.svg", title: "UX/UI Consultancy", description: "Do you need applications or any kind of software that can run independent of platform. day." },
-  { image: "./services/Dataextraction.svg", title: "Data extraction", description: "Do you need applications or any kind of software that can run independent of platform. day." },
+  { image: "./services/Webapplication.svg", title: "Web application", description: "Get an application or software that can run independent of platform. We provide web powered applications that run on cloud, always synced data and 24/7 support from us." },
+  { image: "./services/Websitess.svg", title: "Websites", description: "Need a website for your business, organizations ? We provide exactly that. Get your own website with better user interface & user experience with rich features." },
+  { image: "./services/Marketing.svg", title: "Marketing / SEO", description: "From the ground to social platforms, We do it all. We provide marketing campaigns for your business to targeted consumers." },
+  { image: "./services/Automation.svg", title: "Automation", description: "Reduce efforts to handle all functions in your system. We develop programs that can automate your work and help to improve efficiency, reduce costs, and improve the accuracy and consistency of tasks." },
+  { image: "./services/Analytics.svg", title: "Analytics", description: "Transform your data into Graphs, Pie chart or any other. Get a visually and technically pleasing tool to track your data. We also provide a dashboard powered by Microsoft Power bi." },
+
+  { image: "./services/Datavisualization.svg", title: "Data visualization",description:"We value the data, the kind of information it generates for us so we make data driven decisions. Decisions that would truly be based on accurate information. Now you can boost the sales and run a successful company." },
+
+  { image: "./services/Cloud.svg", title: "Cloud", description: "Robust and accessible solutions are driven by accessible technologies which alway make sure that your web application, information it provides are both accessible." },
+  { image: "./services/Mobileapps.svg", title: "Mobile apps", description: "Bring your ideas to mobile platforms with an app. Because the sooner your Mobile App hits the marketplace the better." },
+  { image: "./services/E-commerce.svg", title: "E-commerce", description: "Get feature rich and pleasing UX & UI websites, software or applications for your targeted consumers & boost your sales." },
+  { image: "./services/Devops.svg", title: "Devops", description: "We will set up the DevOps for you and with the powerful CI/CD pipeline you just focus on developing we'll take care of the infrastructure.We know the time it costs in testing the application and deploying the latest build." },
+  { image: "./services/UXUIConsultancy.svg", title: "UX/UI Consultancy", description: "UI and UX are so important when it comes to the application designing. We know the power of UI/UX and what it is capable of so we design and develop them for your application or even update your existing one for you." },
+  { image: "./services/Dataextraction.svg", title: "Data extraction", description: "We create a data warehouse for you and load all the data into it for your team to start processing on. We have the tools and techniques to get it." },
 
 ]
 
@@ -51,10 +53,11 @@ export default function Home() {
 
         {/* Services */}
         <div className='relative bottom-4  grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-[60px] md:gap-[70px] xl:gap-[80px] 2xl:gap-[110px] '>
-          <ServiceItem image="./services/MobApp.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Mobile apps" />
-          <ServiceItem image="./services/Websites.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Websites & Apps" />
-          <ServiceItem image="./services/Anal.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Analytics" />
-          <ServiceItem image="./services/Pricing.png" description="We brings your ideas to reality by developing mobile apps rich with user experience." title="Pricing" />
+          <ServiceItem image="./services/MobApp.png" description="Bring your ideas to mobile platform with up to date ux & ui
+in market." title="Mobile apps" />
+          <ServiceItem image="./services/Websites.png" description="Get web app & site for wide range of systems with up to date languages." title="Websites & Apps" />
+          <ServiceItem image="./services/Anal.png" description="Get visually & technically pleasing dashboards which actually works." title="Analytics" />
+          <ServiceItem image="./services/Pricing.png" description="Flexible pricing plans for individuals , small business & big corporates." title="Pricing" />
         </div>
 
 
@@ -119,7 +122,7 @@ export default function Home() {
         <p className='font-inter text-[#FFFFFF] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 xl:w-4/5'>Providing the best user experience to your users and directly targeting the problem that was intended to solve, our softwares and applications are not only performant as compared.&lsquo;s</p>
 
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-12 lg:mt-24 gap-10 md:gap-12 xl:gap-[50px] md:pl-10 sm:pl-6 lg:pl-12 xl:pl-16'>
+        <div className='pl-3 grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 mt-12 lg:mt-24 gap-10 md:gap-12 xl:gap-[50px] md:pl-10 sm:pl-6 lg:pl-12 xl:pl-16'>
           {allServices.map(item => {
 
             return (

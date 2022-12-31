@@ -60,6 +60,8 @@ function Navbar() {
 
                                     <Link href='/'>
                                         <p className='text-textMain  align-center text-center  font-Abhayalibre font-bold  text-3xl  cursor-pointer lg:text-left lg:ml-8 ml-3  2xl:ml-[100px] '>Codeouts</p>
+
+                                        <img src="./logo.svg" alt="" />
                                     </Link>
 
 
