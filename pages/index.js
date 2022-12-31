@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 import Portfolio from '../components/Portfolio'
 import Pricing from '../components/Pricing'
 import Quatation from '../components/Quatation'
@@ -14,7 +15,7 @@ const allServices = [
   { image: "./services/Automation.svg", title: "Automation", description: "Reduce efforts to handle all functions in your system. We develop programs that can automate your work and help to improve efficiency, reduce costs, and improve the accuracy and consistency of tasks." },
   { image: "./services/Analytics.svg", title: "Analytics", description: "Transform your data into Graphs, Pie chart or any other. Get a visually and technically pleasing tool to track your data. We also provide a dashboard powered by Microsoft Power bi." },
 
-  { image: "./services/Datavisualization.svg", title: "Data visualization",description:"We value the data, the kind of information it generates for us so we make data driven decisions. Decisions that would truly be based on accurate information. Now you can boost the sales and run a successful company." },
+  { image: "./services/Datavisualization.svg", title: "Data visualization", description: "We value the data, the kind of information it generates for us so we make data driven decisions. Decisions that would truly be based on accurate information. Now you can boost the sales and run a successful company." },
 
   { image: "./services/Cloud.svg", title: "Cloud", description: "Robust and accessible solutions are driven by accessible technologies which alway make sure that your web application, information it provides are both accessible." },
   { image: "./services/Mobileapps.svg", title: "Mobile apps", description: "Bring your ideas to mobile platforms with an app. Because the sooner your Mobile App hits the marketplace the better." },
@@ -29,7 +30,7 @@ const allServices = [
 export default function Home() {
   return (
 
-    <div className='pb-24'>
+    <div className=''>
 
 
       <div className='px-[20px] sm:px-[26px] md:px-[30px] lg:px-[36px] xl:px-[60px] 2xl:px-[70px] bg-banner w-full bg-no-repeat bg-cover h-[300px] md:h-[350px] lg:h-[400px] xl:h-[550px] '>
@@ -173,6 +174,8 @@ in market." title="Mobile apps" />
 
 
 
+
+      <Footer />
 
 
 
