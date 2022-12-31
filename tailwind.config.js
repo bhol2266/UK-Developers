@@ -87,6 +87,7 @@ module.exports = {
         Abhayalibre: ['Abhaya Libre'],
         Mont: ['Montserrat'],
         Legend: ['Lexend'],
+        assist: ['Assistant'],
 
       }
     },
