@@ -153,13 +153,12 @@ export default function Home() {
           <h1 className='font-Legend font-medium text-center text-textMain text-[24px] lg:text-[28px] xl:text-[36px] 2xl:text-[38px] '>About us</h1>
           <p className='font-inter text-textSub text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3  mx-auto 2xl:w-3/5 '>Codesout provides services in the domain of software development, mobile app development, website designing, web application creation, innovative designs, UI/UX consultancy, systems development and automations. Our company offers standalone software solutions that fits right on your expectations.</p>
 
-
           <p className='font-inter text-textSub text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 '>Providing the best user experience to your users and directly targeting the problem that was intended to solve, our software and applications are not only performant as compared to those leading the market but also rich with modern age design and seamless experience, so whoever you intended that application to be used by, not only bring about their tasks accurately on time but also with 100% effortless actions along with providing experience. We believe in order to successfully execute the project it is very important for us to take you aboard regarding all the development process.</p>
 
 
 
 
-          <p className='font-inter text-textSub text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 '> We say this because you are our project owner and owner should know about what is being developed. Apart from providing you the best service we can, we also provide you quite inclusive and clear development and production environment. We value your suggestions and always like to have you bring in new ideas to the table. Who cares if you can't code. But you can generate ideas like no one else can, combine that with our development expertise and top notch technology choices, we truly can create something that can bring in value to our user's life.</p>
+          <p className='font-inter text-textSub text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 '> We say this because you are our project owner and owner should know about what is being developed. Apart from providing you the best service we can, we also provide you quite inclusive and clear development and production environment. We value your suggestions and always like to have you bring in new ideas to the table. Who cares if you cant&lsquo; code. But you can generate ideas like no one else can, combine that with our development expertise and top notch technology choices, we truly can create something that can bring in value to our user&lsquo;s life.</p>
 
         </div>
 
