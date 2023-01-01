@@ -6,7 +6,7 @@ import Pricing from '../components/Pricing'
 import Quatation from '../components/Quatation'
 import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
 import ServiceItem from '../components/ServiceItem'
-
+import Link from 'next/link'
 
 const allServices = [
   { image: "./services/Webapplication.svg", title: "Web application", description: "Get an application or software that can run independent of platform. We provide web powered applications that run on cloud, always synced data and 24/7 support from us." },
@@ -40,8 +40,13 @@ export default function Home() {
           <img src="./Title.png" alt="" className='w-4/5 md:3/5 xl:w-1/2 ' />
 
           <div className='flex space-x-2 w-full  my-6'>
-            <button className='hover:bg-gray-600 font-inter font-medium px-2 py-1 text-[13px] lg:text-[18px]  lg:px-4  lg:py-2 rounded-[5px] text-white bg-textMain'>Discover more</button>
-            <button className='hover:bg-gray-600 font-inter font-medium  px-2 py-1 text-[13px] lg:text-[18px]  lg:px-4  lg:py-2 rounded-[5px] text-white bg-textMain'>Services</button>
+
+            <Link href='#portfolio'>
+              <button className='hover:bg-gray-600 font-inter font-medium px-2 py-1 text-[13px] lg:text-[18px]  lg:px-4  lg:py-2 rounded-[5px] text-white bg-textMain'>Discover more</button>
+            </Link>
+            <Link href='#Whatwe_offer'>
+              <button className='hover:bg-gray-600 font-inter font-medium  px-2 py-1 text-[13px] lg:text-[18px]  lg:px-4  lg:py-2 rounded-[5px] text-white bg-textMain'>Services</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -175,10 +180,17 @@ in market." title="Mobile apps" />
 
 
       <div id='footer'>
+
         <Footer />
       </div>
 
 
+      <div className='hidden' >
+        <a className='' href="https://www.chutlunds.live/">.</a>
+        <a className='' href="https://www.chutlunds.com/">.</a>
+        <a className='' href="http://desikahaniya.in/">.</a>
+
+      </div>
 
 
 
