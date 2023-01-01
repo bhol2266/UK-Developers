@@ -9,7 +9,7 @@ const Footer = () => {
             <div>
                 <div className="flex items-center justify-center space-x-3">
                     <img src="./footer/Shape.svg" alt="" className="h-4 lg:h-6" />
-                    <h1 className='font-assist  text-center text-white text-[12px] lg:text-[14px] xl:text-[20px]  '>BTM Phase 2, Electronic City, Bengaluru, Karnataka, INDIA 560100 </h1>
+                    <h1 className='font-assist  text-center text-white text-[12px] lg:text-[14px] xl:text-[20px]  '>BTM Phase 2, Electronic City, Bangalore, Karnataka, INDIA 560100 </h1>
                 </div>
 
                 <div className="flex items-center justify-center space-x-3 mt-2">

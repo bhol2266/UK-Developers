@@ -45,7 +45,7 @@ function Navbar() {
 
     return (
 
-        <div className='p-2   lg:py-4 2xl:py-6 shadow-lg shadow-gray-800'>
+        <div className='p-2   lg:py-4 2xl:py-6 shadow-lg'>
 
 
             <div>
