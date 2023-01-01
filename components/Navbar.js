@@ -25,11 +25,11 @@ import Link from 'next/link';
 
 var navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'About us', href: '/catgory', current: false },
-    { name: 'Company', href: '/', current: false },
-    { name: 'Portfolio', href: '/', current: false },
-    { name: 'Services', href: '/', current: false },
-    { name: 'Contact us', href: '/', current: false },
+    { name: 'Pricing', href: '#pricing', current: false },
+    { name: 'Portfolio', href: '#portfolio', current: false },
+    { name: 'Services', href: '#Whatwe_offer', current: false },
+    { name: 'Contact us', href: '#footer', current: false },
+    { name: 'About us', href: '#aboutus', current: false },
     // { name: 'Live Cams', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
     // { name: 'Meet & Fuck', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
 ]
@@ -45,7 +45,7 @@ function Navbar() {
 
     return (
 
-        <div className='p-2   lg:py-4 2xl:py-6 shadow-lg'>
+        <div className='p-2 sticky top-0 bg-white z-20   lg:py-4  shadow-md'>
 
 
             <div>
@@ -70,19 +70,25 @@ function Navbar() {
                                             <p className=' text-[14px] xl:text-[18px] 2xl:text-[20px] text-textMain font-inter cursor-pointer hover:text-red-800       '>Home</p>
                                         </Link>
 
-                                        <Link href='/'>
-                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800       '>About us</p>
+                                       
+
+                                        <Link href='#pricing'>
+                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Pricing</p>
                                         </Link>
 
-                                        <Link href='/'>
-                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Company</p>
-                                        </Link>
-
-                                        <Link href='/'>
+                                        <Link href='#portfolio'>
                                             <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Portfolio</p>
                                         </Link>
-                                        <Link href='/'>
+                                        <Link href='#Whatwe_offer'>
                                             <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Services</p>
+                                        </Link>
+
+                                        <Link href='#footer'>
+                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800       '>Contact</p>
+                                        </Link>
+
+                                        <Link href='#aboutus'>
+                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800       '>About us</p>
                                         </Link>
 
 

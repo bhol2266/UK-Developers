@@ -118,7 +118,7 @@ in market." title="Mobile apps" />
 
 
       {/* Whatwe offer  */}
-      <div className='mt-12 lg:mt-24 px-[14px] py-12 lg:py-[80px] xl:py-[100px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] backgroundCustomCss'>
+      <div id='Whatwe_offer' className='mt-12 lg:mt-24 px-[14px] py-12 lg:py-[80px] xl:py-[100px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] backgroundCustomCss'>
         <h1 className='font-Legend font-medium text-center text-[#FFFFFF] text-[24px] lg:text-[28px] xl:text-[36px] 2xl:text-[38px] '>What we offer ?</h1>
         <p className='font-inter text-[#FFFFFF] text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3    mx-auto 2xl:w-3/5 xl:w-4/5'>Providing the best user experience to your users and directly targeting the problem that was intended to solve, our softwares and applications are not only performant as compared.&lsquo;s</p>
 
@@ -137,7 +137,7 @@ in market." title="Mobile apps" />
 
         {/* Pricing  */}
 
-        <div className='mt-14 lg:mt-28'>
+        <div id='pricing' className='mt-14 lg:mt-28'>
           <Pricing />
         </div>
 
@@ -145,14 +145,14 @@ in market." title="Mobile apps" />
       </div>
 
       {/* Get Free Quatation  */}
-      <div className='px-[14px] py-12 lg:py-[60px] xl:py-[80px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] '>
+      <div id='portfolio' className='px-[14px] py-12 lg:py-[60px] xl:py-[80px]  sm:px-[26px] md:px-[60px] lg:px-[36px] xl:px-[90px] 2xl:px-[120px] '>
         <Quatation />
 
         <Portfolio />
 
 
         {/* About us  */}
-        <div className='mt-14 lg:mt-[70px] xl:mt-[70px]'>
+        <div id='aboutus' className='mt-14 lg:mt-[70px] xl:mt-[70px]'>
 
           <h1 className='font-Legend font-medium text-center text-textMain text-[24px] lg:text-[28px] xl:text-[36px] 2xl:text-[38px] '>About us</h1>
           <p className='font-inter text-textSub text-center text-[12px] lg:text-[15px] xl:text-[17px] mt-1 md:mt-2 xl:mt-3  mx-auto 2xl:w-3/5 '>Codesout provides services in the domain of software development, mobile app development, website designing, web application creation, innovative designs, UI/UX consultancy, systems development and automations. Our company offers standalone software solutions that fits right on your expectations.</p>
@@ -174,8 +174,9 @@ in market." title="Mobile apps" />
 
 
 
-
-      <Footer />
+      <div id='footer'>
+        <Footer />
+      </div>
 
 
 

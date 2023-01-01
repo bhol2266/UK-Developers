@@ -64,6 +64,9 @@
 
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
 
     
     .partitioned {
