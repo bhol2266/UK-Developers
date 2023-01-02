@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }) {
 
       <div className={`${messageBox ? "bg-white shadow" : ""}  rounded-lg py-4  cursor-pointer  fixed bottom-2 left-2 z-10 lg:bottom-5 lg:left-5  flex items-center space-x-3 lg:space-x-4`}>
         <ReactWhatsapp id='ReactWhatsapp' number="91-910-882-5914" message={message} />
-        <img onClick={openMessageBox} src="./whatsapp.svg" alt="" className='h-[55px]  lg:h-[80px] ' />
+        <img onClick={openMessageBox} src="./whatsapp.svg" alt="" className='h-[55px]  lg:h-[80px] hover:scale-125 transition-all duration-300' />
 
 
         <div className={`${messageBox ? "block " : "hidden"}`}>
