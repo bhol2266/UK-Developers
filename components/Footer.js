@@ -35,7 +35,7 @@ const Footer = () => {
 
 
             <div className="flex md:flex-row flex-col space-y-3 justify-between items-center mt-6 px-[40px]  ">
-                <div className="flex space-x-6 lg:space-x-10 items-center ml-12">
+                <div className="flex space-x-6 lg:space-x-10 items-center ">
                     <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]   '>Help </h1>
                     <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>Privacy Policy </h1>
 
