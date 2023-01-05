@@ -36,9 +36,13 @@ export default function App({ Component, pageProps }) {
   }
 
 
-
   return (
     <>
+
+      <Head>
+        <title>Web Development and Mobile App Development Services - Codeouts</title>
+        <meta name="description" content="Codeouts is a well-known web development company with 6+ years of experience in providing web development Services. That offers web design, software development, mobile apps development and SEO services. We help companies by providing end-to-end web development consultation."></meta>
+      </Head>
 
       <Navbar />
       <Component {...pageProps} />
