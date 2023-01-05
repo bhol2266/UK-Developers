@@ -42,6 +42,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Web Development and Mobile App Development Services - Codeouts</title>
         <meta name="description" content="Codeouts is a well-known web development company with 6+ years of experience in providing web development Services. That offers web design, software development, mobile apps development and SEO services. We help companies by providing end-to-end web development consultation."></meta>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8226562131234590"
+          crossorigin="anonymous"></script>
       </Head>
 
       <Navbar />
