@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-export default function foms() {
+export default function Forms() {
 
     const [forms, setforms] = useState([])
 
@@ -29,7 +29,7 @@ export default function foms() {
 
             {forms.map(form => {
                 return (
-                    <div>
+                    <div key={form.Email}>
                         <h1 className='font-inter'>{form.FirstName + " " + form.LastName}</h1>
                         <h1 className='font-inter'>{form.Email}</h1>
                         <h1 className='font-inter'> {form.phoneNumber}</h1>
