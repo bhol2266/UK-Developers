@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 
 
-
 const Quatation = () => {
 
     const [firstName, setfirstName] = useState('');
@@ -13,6 +12,40 @@ const Quatation = () => {
     const [Email, setEmail] = useState('');
     const [TIme, setTIme] = useState('');
     const [PhoneNumber, setPhoneNumber] = useState('');
+    
+
+
+    const submitForm = async (e) => {
+
+        e.preventDefault()
+
+        const data = {
+            FirstName: firstName,
+            LastName: lastName,
+            Email: Email,
+            completeDate: Date.now(),
+            phoneNumber: PhoneNumber,
+        }
+        const rawResponse = await fetch('https://clownfish-app-jn7w9.ondigitalocean.app/codeouts', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        const content = await rawResponse.json();
+        if (content.success) {
+            alert("Form Uploaded")
+
+            setfirstName('')
+            setlastName('')
+            setEmail('')
+            setPhoneNumber('')
+
+        }
+    }
+
 
     return (
         <div>
@@ -23,7 +56,7 @@ const Quatation = () => {
 
 
             <div className="mt-6 lg:mt-8 xl:mt-[50px] px-[20px] sm:px-[80px] md:px-[100px] xl:px-[220px] 2xl:px-[280px] 3xl:px-[350px]">
-                <form>
+                <form onSubmit={submitForm} >
 
                     <div className="lg:grid grid-cols-2 lg:gap-[30px] xl:gap-[40px] ">
 
@@ -33,7 +66,9 @@ const Quatation = () => {
 
                         <input value={Email} onChange={(e) => { setEmail(e.target.value) }} type="email" id="Email" className="w-full bg-gray-50 border-[1.2px] border-[#4B5563] text-black text-[11px] sm:text-[12px] md:text-[13px] xl:text-[14px] rounded-[4px] p-3  outline-none  mb-2 lg:mb-0" placeholder="Email*" required />
 
-                        <input value={PhoneNumber} onChange={(e) => { setPhoneNumber(e.target.value) }} type="number" id="Phone Number*" className="w-full bg-gray-50 border-[1.2px] border-[#4B5563] text-black text-[11px] sm:text-[12px] md:text-[13px] xl:text-[14px] rounded-[4px] p-3  outline-none  mb-2 lg:mb-0" placeholder="Phone Number*" required />
+                        <input value={PhoneNumber} onChange={(e) => {
+                            setPhoneNumber(e.target.value)
+                        }} type="number" id="Phone Number*" className="w-full bg-gray-50 border-[1.2px] border-[#4B5563] text-black text-[11px] sm:text-[12px] md:text-[13px] xl:text-[14px] rounded-[4px] p-3  outline-none  mb-2 lg:mb-0" placeholder="Phone Number*" required />
 
                     </div>
 
