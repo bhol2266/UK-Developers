@@ -1,4 +1,8 @@
+import { useRouter } from "next/router";
+
 const Footer = () => {
+
+  const router=  useRouter()
     return (
 
 
@@ -44,7 +48,7 @@ const Footer = () => {
                 </div>
 
 
-                <h1 className='font-assist  text-center text-gray-500 text-[11px] lg:text-[12px] xl:text-[13px] '>Copyright © 2023 Codesout, All rights reserved. </h1>
+                <h1 onClick={()=>{router.push('/forms')}} className='font-assist  text-center text-gray-500 text-[11px] lg:text-[12px] xl:text-[13px] '>Copyright © 2023 Codesout, All rights reserved. </h1>
 
             </div>
         </div>
