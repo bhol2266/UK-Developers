@@ -26,7 +26,7 @@ const Quatation = () => {
             completeDate: Date.now(),
             phoneNumber: PhoneNumber,
         }
-        const rawResponse = await fetch('https://clownfish-app-jn7w9.ondigitalocean.app/codeouts', {
+        const rawResponse = await fetch('https://clownfish-app-jn7w9.ondigitalocean.app/codeouts/codeouts', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

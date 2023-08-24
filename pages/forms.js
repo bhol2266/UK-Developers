@@ -9,7 +9,7 @@ export default function Forms() {
 
     async function getForms() {
 
-        const rawResponse = await fetch('https://clownfish-app-jn7w9.ondigitalocean.app/codeoutsform',)
+        const rawResponse = await fetch('https://clownfish-app-jn7w9.ondigitalocean.app/codeouts/codeoutsform',)
         const content = await rawResponse.json();
         console.log(content);
         setforms(content.data)
