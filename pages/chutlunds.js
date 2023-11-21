@@ -14,7 +14,7 @@ export async function getServerSideProps({ req, res }) {
 
 
     const parcelData = { href: "https://spankbang.party/" }
-    const rawResponse = await fetch(`https://clownfish-app-jn7w9.ondigitalocean.app/getHomePageVideos`, {
+    const rawResponse = await fetch(`https://sheppards-orpin.vercel.app/api/spangbang/homepage`, {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ export async function getServerSideProps({ req, res }) {
       body: JSON.stringify(parcelData),
     });
     const ress = await rawResponse.json();;
-    const finalDataArray_Arrar=ress.data;
+    const finalDataArray_Arrar=ress.finalDataArray;
   
   
     var desiVideosDataArray = []
@@ -34,7 +34,7 @@ export async function getServerSideProps({ req, res }) {
     const obj2 = await scrapeVideos(`https://spankbang.party/s/desi%20mms/?o=all`)
     desiMmsVideoArray = obj2.finalDataArray
   
-  console.log(finalDataArray_Arrar);
+  
   
     return {
       props: {
@@ -43,6 +43,7 @@ export async function getServerSideProps({ req, res }) {
         desiMmsVideoArray: desiMmsVideoArray
       }
     }
+  
   
   
   }
