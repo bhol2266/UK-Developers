@@ -9,7 +9,7 @@ export default function Chutunds({ video_collection, pages, desiVideosDataArray,
 
 
 
-export async function getStaticProps({ req, res }) {
+export async function getServerSideProps({ req, res }) {
 
 
 
