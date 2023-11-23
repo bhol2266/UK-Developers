@@ -14,9 +14,9 @@ export default async function handler(req, res) {
     var previewVideoArray = []
     var hrefArray = []
 
-    // const response = await fetchdata('https://spankbang.party/')
-    // const body = await response.text();
-    // const $ = cheerio.load(body)
+    const response = await fetchdata('https://spankbang.party/')
+    const body = await response.text();
+    const $ = cheerio.load(body)
 
 
     // $('.videos .video-list.video-rotate').each((i, el) => {
@@ -113,5 +113,5 @@ export default async function handler(req, res) {
     //     finalDataArray = []
     // })
 
-    res.status(200).json({ finalDataArray: finalDataArray_Arrar ,success:true})
+    res.status(200).json({ finalDataArray: finalDataArray_Arrar ,success:true,body:body})
 }
