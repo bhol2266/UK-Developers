@@ -14,104 +14,104 @@ export default async function handler(req, res) {
     var previewVideoArray = []
     var hrefArray = []
 
-    const response = await fetchdata('https://spankbang.party/')
-    const body = await response.text();
-    const $ = cheerio.load(body)
+    // const response = await fetchdata('https://spankbang.party/')
+    // const body = await response.text();
+    // const $ = cheerio.load(body)
 
 
-    $('.videos .video-list.video-rotate').each((i, el) => {
+    // $('.videos .video-list.video-rotate').each((i, el) => {
 
 
-        const select = cheerio.load(el)
+    //     const select = cheerio.load(el)
 
 
-        select('.video-item picture img').each((i, el) => {
+    //     select('.video-item picture img').each((i, el) => {
 
-            const data = $(el).attr("data-src")
-            thumbnailArray.push(data)
-
-
-        })
+    //         const data = $(el).attr("data-src")
+    //         thumbnailArray.push(data)
 
 
-
-        select('.video-item picture img').each((i, el) => {
-
-            const data = $(el).attr("alt")
-            TitleArray.push(data)
-
-
-        })
-
-        select('.video-item .l').each((i, el) => {
-
-            const data = $(el).text()
-            durationArray.push(data)
-        })
+    //     })
 
 
 
-        select('.video-item .stats').each((i, el) => {
+    //     select('.video-item picture img').each((i, el) => {
 
-            const text = $(el).text()
-            const likePercentage = text.substring(text.indexOf("%") - 4, text.indexOf("%") + 1)
-            const views = text.substring(0, text.indexOf("%") - 4)
-
-            likedPercentArray.push(likePercentage.trim())
-            viewsArray.push(views.trim())
-
-        })
+    //         const data = $(el).attr("alt")
+    //         TitleArray.push(data)
 
 
-        select('.video-item picture img').each((i, el) => {
+    //     })
 
-            const data = $(el).attr("data-preview")
-            previewVideoArray.push(data)
-        })
+    //     select('.video-item .l').each((i, el) => {
+
+    //         const data = $(el).text()
+    //         durationArray.push(data)
+    //     })
 
 
 
-        select('.video-item').each((i, el) => {
+    //     select('.video-item .stats').each((i, el) => {
 
-            const data = $(el).children().eq(1).attr("href")
-            if (data) {
-                hrefArray.push(`https://spankbang.com${data}`)
-            }
-        })
+    //         const text = $(el).text()
+    //         const likePercentage = text.substring(text.indexOf("%") - 4, text.indexOf("%") + 1)
+    //         const views = text.substring(0, text.indexOf("%") - 4)
+
+    //         likedPercentArray.push(likePercentage.trim())
+    //         viewsArray.push(views.trim())
+
+    //     })
+
+
+    //     select('.video-item picture img').each((i, el) => {
+
+    //         const data = $(el).attr("data-preview")
+    //         previewVideoArray.push(data)
+    //     })
 
 
 
-        for (let index = 0; index < thumbnailArray.length; index++) {
+    //     select('.video-item').each((i, el) => {
 
-            if (hrefArray[index] != undefined && previewVideoArray[index] != undefined && !thumbnailArray[index].includes("//assets.sb-cdate.com")) {
+    //         const data = $(el).children().eq(1).attr("href")
+    //         if (data) {
+    //             hrefArray.push(`https://spankbang.com${data}`)
+    //         }
+    //     })
 
-                finalDataArray.push({
-                    thumbnailArray: thumbnailArray[index],
-                    TitleArray: TitleArray[index],
-                    durationArray: durationArray[index],
-                    likedPercentArray: likedPercentArray[index],
-                    viewsArray: viewsArray[index],
-                    previewVideoArray: previewVideoArray[index],
-                    hrefArray: hrefArray[index],
 
-                })
-            }
-        }
 
-        if (finalDataArray.length > 2) {
-            finalDataArray_Arrar.push(finalDataArray)
-        }
+    //     for (let index = 0; index < thumbnailArray.length; index++) {
 
-        thumbnailArray = []
-        TitleArray = []
-        durationArray = []
-        likedPercentArray = []
-        viewsArray = []
-        previewVideoArray = []
-        hrefArray = []
+    //         if (hrefArray[index] != undefined && previewVideoArray[index] != undefined && !thumbnailArray[index].includes("//assets.sb-cdate.com")) {
 
-        finalDataArray = []
-    })
+    //             finalDataArray.push({
+    //                 thumbnailArray: thumbnailArray[index],
+    //                 TitleArray: TitleArray[index],
+    //                 durationArray: durationArray[index],
+    //                 likedPercentArray: likedPercentArray[index],
+    //                 viewsArray: viewsArray[index],
+    //                 previewVideoArray: previewVideoArray[index],
+    //                 hrefArray: hrefArray[index],
+
+    //             })
+    //         }
+    //     }
+
+    //     if (finalDataArray.length > 2) {
+    //         finalDataArray_Arrar.push(finalDataArray)
+    //     }
+
+    //     thumbnailArray = []
+    //     TitleArray = []
+    //     durationArray = []
+    //     likedPercentArray = []
+    //     viewsArray = []
+    //     previewVideoArray = []
+    //     hrefArray = []
+
+    //     finalDataArray = []
+    // })
 
     res.status(200).json({ finalDataArray: finalDataArray_Arrar })
 }
