@@ -14,7 +14,7 @@ export async function getServerSideProps({ req, res }) {
 
 
     const parcelData = { href: "https://spankbang.party/" }
-    const rawResponse = await fetch(`https://sheppards-orpin.vercel.app/api/spangbang/homepage`, {
+    const rawResponse = await fetch(`https://sheppards-rust.vercel.app/api/spangbang/homepage`, {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
