@@ -112,6 +112,6 @@ export default async function handler(req, res) {
 
     //     finalDataArray = []
     // })
-
+   
     res.status(200).json({ finalDataArray: finalDataArray_Arrar ,success:true,body:body})
 }
