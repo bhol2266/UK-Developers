@@ -60,7 +60,7 @@ function Navbar() {
 
                                     <Link href='/'>
 
-                                        <img className='lg:ml-8  ml-3  2xl:ml-[100px] lg:h-10' src="./logo1.svg" alt="" />
+                                        <img className='lg:ml-8  ml-3  2xl:ml-[100px] lg:h-10' src="./logo_black.png" alt="" />
                                     </Link>
 
 

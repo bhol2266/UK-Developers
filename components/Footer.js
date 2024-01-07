@@ -10,18 +10,18 @@ const Footer = () => {
 
             <div className=" flex flex-col lg:flex-row lg:justify-between lg:px-6  2xl:px-14 3xl:px-16 items-center justify-center space-y-6 border-b-[0.5px]  border-t-[1px] border-gray-500 py-7 ">
 
-                <img src="./logo.svg" alt="" className="h-8 lg:h-10 xl:h-12  2xl:h-14" />
+                <img src="./logo_white.png" alt="" className="h-8 lg:h-10 xl:h-12  2xl:h-14" />
 
 
                 <div className="flex flex-col items-center space-y-3 xl:space-y-6">
                     <div className="flex items-center justify-center space-x-3">
                         <img src="./footer/Shape.svg" alt="" className="h-4 lg:h-6" />
-                        <h1 className='font-assist  text-center text-gray-300 text-[11px] lg:text-[14px] xl:text-[20px]  '>BTM Phase 2, Electronic City, Bangalore, Karnataka, INDIA 560100 </h1>
+                        <h1 className='font-assist  text-center text-gray-300 text-[11px] lg:text-[14px] xl:text-[20px]  '>FLAT NO. 1, WARD NO - 07, KOTWA ROAD, MOTIHARI, BIHAR, INDIA 845301 </h1>
                     </div>
 
                     <div className="flex items-center justify-center space-x-3">
                         <img src="./footer/Path.svg" alt="" className="h-4 lg:h-6" />
-                        <h1 className='font-assist  text-center text-gray-300 text-[12px] lg:text-[14px] xl:text-[20px]  '>+91 9937645877 </h1>
+                        <h1 className='font-assist  text-center text-gray-300 text-[12px] lg:text-[14px] xl:text-[20px]  '>+91 9108825914 </h1>
                     </div>
 
                     <div className="flex items-center justify-center space-x-4 pt-2 xl:pt-3">
