@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Web Development and Mobile App Development Services - Codeouts</title>
         <meta name="description" content="Codeouts is a well-known web development company with 6+ years of experience in providing web development Services. That offers web design, software development, mobile apps development and SEO services. We help companies by providing end-to-end web development consultation."></meta>
-
+<meta name="facebook-domain-verification" content="n53odu8t61v4l2tu2sy2mo7rco2rz0" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8226562131234590"
           crossOrigin="anonymous"></script>
       </Head>
