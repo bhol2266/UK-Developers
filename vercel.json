@@ -4,6 +4,6 @@
         "NEXT_PUBLIC_API_URL": "https://api.example.com"
       }
     },
-    "regions": ["sfo1 "]
+    "regions": ["sfo1 "] 
   }
   
