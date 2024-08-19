@@ -28,7 +28,12 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
             <p>  {channel_link}</p>
             <p>  {channel_subscriber}</p>
             <p>  {channel_by}</p>
-         
+
+            <p className='my-10'>  {JSON.stringify(video_collection)}</p>
+
+
+
+
         </>
     )
 }
