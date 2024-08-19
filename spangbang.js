@@ -27,7 +27,7 @@ export const scrapeVideos = async (url) => {
     };
 
 
-    const response = await fetch(url, { headers });
+    const response = await fetch(url);
 
 
     const body = await response.text();
