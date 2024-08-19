@@ -96,7 +96,7 @@ export async function getStaticProps(context) {
         }
 
 
-        channel_link = $('.cta_container a').attr('href');
+        // channel_link = $('.cta_container a').attr('href');
 
 
 
