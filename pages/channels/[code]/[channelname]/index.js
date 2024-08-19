@@ -4,7 +4,7 @@ import { BeatLoader } from 'react-spinners';
 
 import { Scrape_Video_Item } from "../../../../Scrape_Video_Item";
 
-function Index({ video_collection, pages, channel_name, collageImages, channel_subscriber, channel_by }) {
+function Index({ body}) {
 
 
 
@@ -24,12 +24,12 @@ function Index({ video_collection, pages, channel_name, collageImages, channel_s
 
     return (
         <>
-            <p>  {channel_name}</p>
-            {/* <p>  {channel_link}</p> */}
+            {/* <p>  {channel_name}</p>
+            <p>  {channel_link}</p>
             <p>  {channel_subscriber}</p>
-            <p>  {channel_by}</p>
+            <p>  {channel_by}</p> */}
 
-            <p className='my-10'>  {JSON.stringify(video_collection)}</p>
+            <p className='my-10'>  {body}</p>
 
 
 
@@ -68,6 +68,7 @@ export async function getStaticProps(context) {
     var channel_name = ""
     var channel_subscriber = ""
     var channel_by = ""
+    var channel_link = ""
     var collageImages = []
 
     const scrape = async (url) => {
@@ -78,7 +79,6 @@ export async function getStaticProps(context) {
         const body = await response.text();
         const $ = cheerio.load(body)
 
-        // console.log(body);
         
 
         finalDataArray = Scrape_Video_Item($)
@@ -96,7 +96,7 @@ export async function getStaticProps(context) {
         }
 
 
-        // channel_link = $('.cta_container a').attr('href');
+        channel_link = $('.cta_container a').attr('href');
 
 
 
@@ -136,13 +136,7 @@ export async function getStaticProps(context) {
 
     return {
         props: {
-            video_collection: finalDataArray,
-            pages: pages,
-            channel_name: channel_name,
-            channel_subscriber: channel_subscriber,
-            channel_by: channel_by,
-            collageImages: collageImages,
-            channel_image: channelname
+            body:body
         }
     }
 }
