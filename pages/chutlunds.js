@@ -1,9 +1,18 @@
 import React from 'react'
 import { scrapeVideos } from '../spangbang';
 
-export default function Chutunds({ finalDataArray }) {
+export default function Chutunds({ finalDataArray, body }) {
   return (
-    <div>{JSON.stringify(finalDataArray)}</div>
+    <div>
+
+      {body}
+      {JSON.stringify(finalDataArray)}
+      
+      
+      
+      
+      </div>
+
   )
 }
 
@@ -24,7 +33,8 @@ export async function getServerSideProps({ req, res }) {
   return {
     props: {
       finalDataArray: finalDataArray,
-      pages: pages
+      pages: pages,
+      body: obj.body
     }
   }
 

@@ -15,7 +15,7 @@ export const scrapeVideos = async (url) => {
     const body = await response.text();
     const $ = cheerio.load(body)
 
-    console.log(body);
+    // console.log(body);
     
 
     
@@ -47,7 +47,7 @@ export const scrapeVideos = async (url) => {
 
   
    
-    return { finalDataArray: finalDataArray, pages: pages }
+    return { finalDataArray: finalDataArray, pages: pages ,body:body}
 }
 
 
