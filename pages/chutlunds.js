@@ -16,9 +16,6 @@ export async function getServerSideProps({ req, res }) {
   var finalDataArray = []
   var pages = []
 
-
-
-  console.log(`https://spankbang.party/`)
   const obj = await scrapeVideos(`https://spankbang.party/`)
   finalDataArray = obj.finalDataArray
   pages = obj.pages

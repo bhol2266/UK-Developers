@@ -4,7 +4,6 @@ import { Scrape_Video_Item } from './Scrape_Video_Item';
 
 export const scrapeVideos = async (url) => {
 
-    console.log(url);
     
     var finalDataArray = []
     var pages = []
