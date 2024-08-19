@@ -70,6 +70,7 @@ export async function getStaticProps(context) {
     var channel_by = ""
     var channel_link = ""
     var collageImages = []
+    var bodyHTMl=""
 
     const scrape = async (url) => {
 
@@ -78,6 +79,7 @@ export async function getStaticProps(context) {
         const response = await fetch(url)
         const body = await response.text();
         const $ = cheerio.load(body)
+        bodyHTMl=body
 
         
 
@@ -136,7 +138,7 @@ export async function getStaticProps(context) {
 
     return {
         props: {
-            body:body
+            body:bodyHTMl
         }
     }
 }
