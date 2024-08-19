@@ -7,11 +7,7 @@ export default function Chutunds({ finalDataArray, body }) {
 
       {body}
       {JSON.stringify(finalDataArray)}
-      
-      
-      
-      
-      </div>
+    </div>
 
   )
 }
