@@ -16,6 +16,9 @@ export const scrapeVideos = async (url) => {
     const body = await response.text();
     const $ = cheerio.load(body)
 
+    console.log(body);
+    
+
     
     finalDataArray= Scrape_Video_Item($)
 
