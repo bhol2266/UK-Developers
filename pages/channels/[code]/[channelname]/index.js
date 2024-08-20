@@ -20,7 +20,7 @@ function Index({ body}) {
     }
 
 
-    
+
 
     return (
         <>
@@ -41,25 +41,25 @@ function Index({ body}) {
 export default Index
 
 
-// export async function getStaticPaths() {
-//     return {
-//         paths: [
-//             {
-//                 params: {
-//                     code: 'l3',
-//                     channelname: 'kink+com'
-//                 }
-//             }
-//         ],
-//         fallback: true // false or 'blocking'
-//     };
-// }
+export async function getStaticPaths() {
+    return {
+        paths: [
+            {
+                params: {
+                    code: 'l3',
+                    channelname: 'kink+com'
+                }
+            }
+        ],
+        fallback: true // false or 'blocking'
+    };
+}
 
 
 
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 
     const { code, channelname } = context.params;
 
