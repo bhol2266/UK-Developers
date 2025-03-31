@@ -32,7 +32,7 @@ const TermsAndConditions = () => {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Merchant's Rights</h2>
+      <h2 className="text-2xl font-semibold mt-6">Merchant&apos;s Rights</h2>
       <p>
         We may collect, store, and share the information provided by you to
         deliver products/services and contact you regarding transactions.
@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Limitation of Liability</h2>
       <p>
-        The User's recourse for defective products/services is to initiate the
+        The User&apos;s recourse for defective products/services is to initiate the
         refund process as per the agreement. We disclaim liability for any losses.
       </p>
 
