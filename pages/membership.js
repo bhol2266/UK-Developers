@@ -37,7 +37,7 @@ const plans = [
 const Membership = () => {
 
     const router = useRouter();
-    const { price, planCode ,source} = router.query;
+    const { price, planCode, source } = router.query;
 
 
     const [selectedPlan, setSelectedPlan] = useState(plans[0])
@@ -75,9 +75,9 @@ const Membership = () => {
                     </div>
                 }
 
-                <div className='block mx-auto w-4/5 md:w-3/5 lg:w-[500px] 2xl:w-[600px]'>
+                <div className='block mx-auto w-4/5 md:w-3/5 lg:w-[500px] 2xl:w-[600px] mt-8'>
                     {plans.map((plan, index) => (
-                        <div key={index} className="flex items-center justify-between mb-2 py-3 px-4 lg:px-8 lg:py-4  bg-white bg-opacity-80 rounded-md cursor-pointer select-none" onClick={() => handlePlanChange(plan)}>
+                        <div key={index} className="flex items-center justify-between mb-2 py-3 px-4 lg:px-8 lg:py-4  bg-black bg-opacity-10 rounded-md cursor-pointer select-none" onClick={() => handlePlanChange(plan)}>
                             <div className='flex items-center'>
                                 <input
                                     type="radio"
@@ -101,15 +101,13 @@ const Membership = () => {
                 <div className="text-white text-[8px] lg:text-[10px] font-poppins text-center bg-black bg-opacity-50 px-2 py-0.5 w-fit mx-auto block rounded">This site is protected by reCAPTCHA and the Google <a className='underline' href="https://policies.google.com/privacy">Privacy Policy</a> and <a className='underline' href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
 
 
-                <button onClick={() => setpaymentModalVisible(true)} className=' bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
+                <button onClick={() => console.log("clicked")} className=' bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
 
 
 
 
 
             </div>
-            <p>Price: {price}</p>
-            <p>Plan: {planCode}</p>
 
         </div>
     )
