@@ -30,6 +30,7 @@ var navigation = [
     { name: 'Services', href: '#Whatwe_offer', current: false },
     { name: 'Contact us', href: '#footer', current: false },
     { name: 'About us', href: '#aboutus', current: false },
+    { name: 'Our Courses', href: '#courses', current: false },
     // { name: 'Live Cams', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
     // { name: 'Meet & Fuck', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
 ]
@@ -47,7 +48,6 @@ function Navbar() {
 
         <div className='p-2 sticky top-0 bg-white z-20   lg:py-4  shadow-md'>
 
-
             <div>
 
 
@@ -60,7 +60,7 @@ function Navbar() {
 
                                     <Link href='/'>
 
-                                        <img className='lg:ml-8  ml-3  2xl:ml-[100px] lg:h-10' src="./logo_black.png" alt="" />
+                                        <img className='h-10 lg:ml-8  ml-3  2xl:ml-[100px] lg:h-10' src="./logo_black.png" alt="" />
                                     </Link>
 
 
@@ -70,7 +70,7 @@ function Navbar() {
                                             <p className=' text-[14px] xl:text-[18px] 2xl:text-[20px] text-textMain font-inter cursor-pointer hover:text-red-800       '>Home</p>
                                         </Link>
 
-                                       
+
 
                                         <Link href='#pricing'>
                                             <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Pricing</p>
@@ -89,6 +89,9 @@ function Navbar() {
 
                                         <Link href='#aboutus'>
                                             <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800       '>About us</p>
+                                        </Link>
+                                        <Link href='#courses'>
+                                            <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] font-inter cursor-pointer     bg-blue-500 rounded px-3 py-1 text-white  '>Buy Courses</p>
                                         </Link>
 
 

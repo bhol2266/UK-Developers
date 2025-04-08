@@ -7,6 +7,10 @@ import Quatation from '../components/Quatation'
 import SericeItem_What_we_offer from '../components/SericeItem_What_we_offer'
 import ServiceItem from '../components/ServiceItem'
 import Link from 'next/link'
+import CourseCards from '../components/CourseCards'
+
+
+
 
 const allServices = [
   { image: "./services/Webapplication.svg", title: "Web application", description: "Get an application or software that can run independent of platform. We provide web powered applications that run on cloud, always synced data and 24/7 support from us." },
@@ -176,7 +180,10 @@ in market." title="Mobile apps" />
 
 
 
+<div id='courses'>
 
+      <CourseCards />
+</div>
 
 
       <div id='footer'>
