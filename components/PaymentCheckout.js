@@ -23,7 +23,7 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
   useEffect(() => {
     setFormData({
       txnid: generateTxnid(),  // Initialize txnid with a generated value
-      amount: "100",
+      amount: selectedPlan.amount,
       firstname: name,
       email: email,
       phone: phonenumber,
