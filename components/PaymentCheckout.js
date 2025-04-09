@@ -8,7 +8,7 @@ const generateTxnid = () => {
   return `${timestamp}-${randomString}`;  // Combine them to form txnid
 };
 
-export default function PaymentCheckout({ selectedPlan, email, name, phonenumber }) {
+export default function PaymentCheckout({ selectedPlan, email, name, phonenumber, source }) {
 
   const [formData, setFormData] = useState({
     txnid: generateTxnid(),  // Initialize txnid with a generated value
@@ -31,9 +31,11 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
 
     // Simulate clicking the "Pay Now" button after 2 seconds
     setTimeout(() => {
-      document.getElementById('payNowButton')?.click();
+      if (source == "Chutlunds") {
+        document.getElementById('payNowButton')?.click();
+      }
     }, 10);
-    
+
   }, [selectedPlan, email, name, phonenumber]);
 
   const [hash, setHash] = useState('');
@@ -71,9 +73,9 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
         <input type="hidden" name="hash" value={hash} />
       </form>
 
-      <button 
+      <button
         id="payNowButton"
-        onClick={handlePayment} 
+        onClick={handlePayment}
         className='bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block hover:scale-105 transition-all mt-4 lg:mt-6'>
         Pay Now
       </button>
