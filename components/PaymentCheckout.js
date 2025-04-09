@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { PAYU_CONFIG } from '../config/payuConfig';
-import { useEffect } from 'react';
+
 // Function to generate txnid
 const generateTxnid = () => {
   const timestamp = Date.now();  // Current timestamp (in milliseconds)
@@ -9,7 +9,6 @@ const generateTxnid = () => {
 };
 
 export default function PaymentCheckout({ selectedPlan, email, name, phonenumber }) {
-
 
   const [formData, setFormData] = useState({
     txnid: generateTxnid(),  // Initialize txnid with a generated value
@@ -28,18 +27,18 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
       email: email,
       phone: phonenumber,
       productinfo: selectedPlan.duration,
-    })
+    });
 
-   
-  }, [selectedPlan, email, name, phonenumber])
-
+    // Simulate clicking the "Pay Now" button after 2 seconds
+    setTimeout(() => {
+      document.getElementById('payNowButton')?.click();
+    }, 10);
+    
+  }, [selectedPlan, email, name, phonenumber]);
 
   const [hash, setHash] = useState('');
 
   const handlePayment = async () => {
-
-
-
     const res = await fetch('/api/generateHash', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -72,7 +71,10 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
         <input type="hidden" name="hash" value={hash} />
       </form>
 
-      <button onClick={handlePayment} className='bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block hover:scale-105 transition-all mt-4 lg:mt-6'>
+      <button 
+        id="payNowButton"
+        onClick={handlePayment} 
+        className='bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block hover:scale-105 transition-all mt-4 lg:mt-6'>
         Pay Now
       </button>
     </>
