@@ -68,8 +68,8 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
         <input type="hidden" name="firstname" value={formData.firstname} />
         <input type="hidden" name="email" value={formData.email} />
         <input type="hidden" name="phone" value={formData.phone} />
-        <input type="hidden" name="surl" value="http://localhost:3000/success" />
-        <input type="hidden" name="furl" value="http://localhost:3000/failure" />
+        <input type="hidden" name="surl" value="https://uk-developers-beta.vercel.app/success" />
+        <input type="hidden" name="furl" value="https://uk-developers-beta.vercel.app/failure" />
         <input type="hidden" name="hash" value={hash} />
       </form>
 
