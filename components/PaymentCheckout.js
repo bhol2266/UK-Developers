@@ -33,9 +33,8 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
 
     // Simulate clicking the "Pay Now" button after 2 seconds
     setTimeout(() => {
-      if (source == "Chutlunds") {
-        document.getElementById('payNowButton')?.click();
-      }
+      document.getElementById('payNowButton')?.click();
+
     }, 10);
 
   }, [selectedPlan, email, name, phonenumber]);
