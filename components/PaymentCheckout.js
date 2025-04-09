@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PAYU_CONFIG } from '../config/payuConfig';
-
+import { useEffect } from 'react';
 // Function to generate txnid
 const generateTxnid = () => {
   const timestamp = Date.now();  // Current timestamp (in milliseconds)
@@ -9,6 +9,8 @@ const generateTxnid = () => {
 };
 
 export default function PaymentCheckout({ selectedPlan, email, name, phonenumber }) {
+
+
   const [formData, setFormData] = useState({
     txnid: generateTxnid(),  // Initialize txnid with a generated value
     amount: selectedPlan.amount,
@@ -18,11 +20,25 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
     productinfo: selectedPlan.duration,
   });
 
+  useEffect(() => {
+    setFormData({
+      txnid: generateTxnid(),  // Initialize txnid with a generated value
+      amount: "100",
+      firstname: name,
+      email: email,
+      phone: phonenumber,
+      productinfo: selectedPlan.duration,
+    })
+
+   
+  }, [selectedPlan, email, name, phonenumber])
+
+
   const [hash, setHash] = useState('');
 
   const handlePayment = async () => {
 
-    console.log(formData);
+
 
     const res = await fetch('/api/generateHash', {
       method: 'POST',
@@ -57,7 +73,7 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
       </form>
 
       <button onClick={handlePayment} className='bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block hover:scale-105 transition-all mt-4 lg:mt-6'>
-        Get Access now!
+        Pay Now
       </button>
     </>
   );
