@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
+import PaymentCheckout from '../components/PaymentCheckout';
 
 
 
@@ -8,6 +9,7 @@ const plans = [
         duration: "1 month",
         offer: "",
         price: "$2.99",
+        amount: "251",
         type: "month",
         planCode: "1M"
     },
@@ -15,6 +17,7 @@ const plans = [
         duration: "3 months",
         offer: "20% OFF",
         price: "$4.99",
+        amount: "420",
         type: "month",
         planCode: "3M"
     },
@@ -23,6 +26,7 @@ const plans = [
         offer: "40% OFF",
         price: "$9.99",
         type: "month",
+        amount: "840",
         planCode: "12M"
     },
 
@@ -30,6 +34,7 @@ const plans = [
         duration: "Lifetime",
         offer: "USE FOREVER",
         price: "$19.99",
+        amount: "1680",
         type: "once",
         planCode: "LIFETIME"
     },
@@ -37,14 +42,22 @@ const plans = [
 const Membership = () => {
 
     const router = useRouter();
-    const { price, planCode, source } = router.query;
+    const {
+        planAmount,
+        planDuration,
+        planCode,
+        email,
+        name,
+        phonenumber,
+        source,
+    } = router.query;
 
 
     const [selectedPlan, setSelectedPlan] = useState(plans[0])
 
     useEffect(() => {
-        if (!price || !planCode) {
-            console.warn("Missing query parameters: price or planCode not found in router.query");
+        if (!planAmount || !planCode) {
+            console.warn("Missing query parameters: planAmount or planCode not found in router.query");
             return;
         }
 
@@ -55,7 +68,7 @@ const Membership = () => {
         } else {
             console.warn("No matching plan found for planCode:", planCode);
         }
-    }, [price, planCode]);
+    }, [email, planCode]);
 
 
 
@@ -101,14 +114,13 @@ const Membership = () => {
                 <div className="text-white text-[8px] lg:text-[10px] font-poppins text-center bg-black bg-opacity-50 px-2 py-0.5 w-fit mx-auto block rounded">This site is protected by reCAPTCHA and the Google <a className='underline' href="https://policies.google.com/privacy">Privacy Policy</a> and <a className='underline' href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
 
 
-                <button onClick={() => console.log("clicked")} className=' bg-blue-500 text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
 
 
 
 
 
             </div>
-
+            <PaymentCheckout selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber}/>
         </div>
     )
 }
