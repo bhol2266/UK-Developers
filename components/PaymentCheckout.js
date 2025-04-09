@@ -17,6 +17,7 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
     email: email,
     phone: phonenumber,
     productinfo: selectedPlan.duration,
+    currency: 'USD'
   });
 
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
       email: email,
       phone: phonenumber,
       productinfo: selectedPlan.duration,
+       currency: 'USD'
     });
 
     // Simulate clicking the "Pay Now" button after 2 seconds
