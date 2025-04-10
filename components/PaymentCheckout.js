@@ -33,11 +33,10 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
         currency: 'USD'
       });
 
-      console.log('====================================');
-      console.log('Source:', source);
+  
 
       setTimeout(() => {
-        if (source === 'Chutlunds') {
+        if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
           document.getElementById('payNowButton')?.click();
         }
 

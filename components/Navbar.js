@@ -36,11 +36,8 @@ function Navbar() {
 
     useEffect(() => {
 
-        if (source === "Chutlunds") {
+        if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
             setHideEverything(true)
-        }else{
-            setHideEverything(false)
-
         }
 
     }, [source]);

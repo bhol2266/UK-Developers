@@ -68,7 +68,7 @@ const Membership = () => {
         } else {
             console.warn("No matching plan found for planCode:", planCode);
         }
-        if (source === "Chutlunds") {
+        if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
             setHideEverything(true)
         }
 
