@@ -54,7 +54,7 @@ const Membership = () => {
 
 
     const [selectedPlan, setSelectedPlan] = useState(plans[0])
-
+    const [HideEverything, setHideEverything] = useState(true)
     useEffect(() => {
         if (!planAmount || !planCode) {
             console.warn("Missing query parameters: planAmount or planCode not found in router.query");
@@ -68,6 +68,10 @@ const Membership = () => {
         } else {
             console.warn("No matching plan found for planCode:", planCode);
         }
+        if (source === "Chutlunds") {
+            setHideEverything(true)
+        }
+
     }, [email, planCode]);
 
 
@@ -88,30 +92,46 @@ const Membership = () => {
                     </div>
                 }
 
-                <div className='block mx-auto w-4/5 md:w-3/5 lg:w-[500px] 2xl:w-[600px] mt-8'>
-                    {plans.map((plan, index) => (
-                        <div key={index} className="flex items-center justify-between mb-2 py-3 px-4 lg:px-8 lg:py-4  bg-black bg-opacity-10 rounded-md cursor-pointer select-none" onClick={() => handlePlanChange(plan)}>
-                            <div className='flex items-center'>
-                                <input
-                                    type="radio"
-                                    id={`plan-${index}`}
-                                    name="plan"
-                                    value={index}
-                                    checked={selectedPlan.duration === plan.duration}
-                                    onChange={() => handlePlanChange(plan)}
-                                    className="form-radio h-5 w-5 lg:h-6 lg:w-6 mr-2 lg:mr-3 text-theme border-theme focus:ring-theme"
-                                />
-                                <label htmlFor={`plan-${index}`} className="font-poppins text-md lg:text-lg">{plan.duration}</label>
-                                <span className={`font-arial font-semibold text-xs lg:text-sm ml-2 bg-red-500 text-white rounded-md px-1 py-0.5 ${plan.offer.length === 0 ? "hidden" : ""}`}>{plan.offer}</span>
-                            </div>
-                            <div>
-                            <span className="font-bold font-inter text-md lg:text-lg">{plan.price}</span>
+                {!HideEverything &&
+                    <div>
 
-                            </div>
+                        <div className='block mx-auto w-4/5 md:w-3/5 lg:w-[500px] 2xl:w-[600px] mt-8'>
+                            {plans.map((plan, index) => (
+                                <div key={index} className="flex items-center justify-between mb-2 py-3 px-4 lg:px-8 lg:py-4  bg-black bg-opacity-10 rounded-md cursor-pointer select-none" onClick={() => handlePlanChange(plan)}>
+                                    <div className='flex items-center'>
+                                        <input
+                                            type="radio"
+                                            id={`plan-${index}`}
+                                            name="plan"
+                                            value={index}
+                                            checked={selectedPlan.duration === plan.duration}
+                                            onChange={() => handlePlanChange(plan)}
+                                            className="form-radio h-5 w-5 lg:h-6 lg:w-6 mr-2 lg:mr-3 text-theme border-theme focus:ring-theme"
+                                        />
+                                        <label htmlFor={`plan-${index}`} className="font-poppins text-md lg:text-lg">{plan.duration}</label>
+                                        <span className={`font-arial font-semibold text-xs lg:text-sm ml-2 bg-red-500 text-white rounded-md px-1 py-0.5 ${plan.offer.length === 0 ? "hidden" : ""}`}>{plan.offer}</span>
+                                    </div>
+                                    <div>
+                                        <span className="font-bold font-inter text-md lg:text-lg">{plan.price}</span>
+
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-                <div className="text-white text-[8px] lg:text-[10px] font-poppins text-center bg-black bg-opacity-50 px-2 py-0.5 w-fit mx-auto block rounded">This site is protected by reCAPTCHA and the Google <a className='underline' href="https://policies.google.com/privacy">Privacy Policy</a> and <a className='underline' href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
+                        <div className="text-white text-[8px] lg:text-[10px] font-poppins text-center bg-black bg-opacity-50 px-2 py-0.5 w-fit mx-auto block rounded">This site is protected by reCAPTCHA and the Google <a className='underline' href="https://policies.google.com/privacy">Privacy Policy</a> and <a className='underline' href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
+
+                    </div>
+                }
+
+                {HideEverything &&
+
+                    <div className="flex items-center justify-center mt-[100px] bg-white">
+                        <div className="flex flex-col items-center">
+                            <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin-slow"></div>
+                            <p className="mt-4 text-lg font-medium text-gray-700">Redirecting to payment gateway...</p>
+                        </div>
+                    </div>
+                }
 
 
 
@@ -120,7 +140,10 @@ const Membership = () => {
 
 
             </div>
-            <PaymentCheckout selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber}/>
+            <div className={`${HideEverything ? "hidden" : "block"}`} >
+
+                <PaymentCheckout selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber} />
+            </div>
         </div>
     )
 }

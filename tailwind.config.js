@@ -17,6 +17,8 @@ module.exports = {
         spii: 'wiggle 2s linear infinite',
         movement: 'movement 1s linear 1',
         colorModal: 'modal 0.5s ease-out 1',
+        'spin-slow': 'spin 2s linear infinite', // default is 1s
+
 
       },
       keyframes: {

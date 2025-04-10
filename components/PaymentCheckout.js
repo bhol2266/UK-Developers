@@ -20,24 +20,31 @@ export default function PaymentCheckout({ selectedPlan, email, name, phonenumber
     currency: 'USD'
   });
 
+
   useEffect(() => {
-    setFormData({
-      txnid: generateTxnid(),  // Initialize txnid with a generated value
-      amount: selectedPlan.amount,
-      firstname: name,
-      email: email,
-      phone: phonenumber,
-      productinfo: selectedPlan.duration,
-       currency: 'USD'
-    });
+    if (selectedPlan?.amount && name && email && phonenumber && selectedPlan?.duration && source) {
+      setFormData({
+        txnid: generateTxnid(),
+        amount: selectedPlan.amount,
+        firstname: name,
+        email: email,
+        phone: phonenumber,
+        productinfo: selectedPlan.duration,
+        currency: 'USD'
+      });
 
-    // Simulate clicking the "Pay Now" button after 2 seconds
-    setTimeout(() => {
-      document.getElementById('payNowButton')?.click();
+      console.log('====================================');
+      console.log('Source:', source);
 
-    }, 10);
+      setTimeout(() => {
+        if (source === 'Chutlunds') {
+          document.getElementById('payNowButton')?.click();
+        }
 
-  }, [selectedPlan, email, name, phonenumber]);
+      }, 10);
+    }
+  }, [selectedPlan, email, name, phonenumber, source]);
+
 
   const [hash, setHash] = useState('');
 
