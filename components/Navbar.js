@@ -1,26 +1,13 @@
-import { useState, useRef, useEffect, } from 'react';
-import { useContext } from 'react'
-import { getCookie, deleteCookie } from "cookies-next";
-import { MenuAlt3Icon } from '@heroicons/react/outline';
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react';
 
 import {
-
-} from '@heroicons/react/solid'
-import {
-    MoonIcon,
-    MenuIcon,
-    SearchIcon,
-    SunIcon,
-    LoginIcon,
-    UserIcon,
-    UserCircleIcon
-
-} from '@heroicons/react/outline'
+    MenuIcon
+} from '@heroicons/react/outline';
+import { } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
 
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import { Disclosure, Transition } from '@headlessui/react';
+import { XIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
 var navigation = [
@@ -43,10 +30,24 @@ function classNames(...classes) {
 function Navbar() {
 
     const router = useRouter();
+    const [HideEverything, setHideEverything] = useState(true)
+
+    const { source } = router.query;
+
+    useEffect(() => {
+
+        if (source === "Chutlunds") {
+            setHideEverything(true)
+        }else{
+            setHideEverything(false)
+
+        }
+
+    }, [source]);
 
     return (
 
-        <div className='p-2 sticky top-0 bg-white z-20   lg:py-4  shadow-md'>
+        <div className={`${HideEverything ? "hidden" : "block"} p-2 sticky top-0 bg-white z-20   lg:py-4  shadow-md`}>
 
             <div>
 
