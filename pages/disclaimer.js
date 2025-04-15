@@ -43,7 +43,7 @@ export default function Disclaimer() {
   
           <h2 className="text-2xl font-semibold">7. Contact Us</h2>
           <p>
-            If you have any questions about this Disclaimer, please feel free to contact us at <a href="mailto:contact@ukdevelopers.org" className="text-blue-600 underline">contact@ukdevelopers.org</a>.
+            If you have any questions about this Disclaimer, please feel free to contact us at <a href="mailto:ukdevelopers007@gmail.com" className="text-blue-600 underline">ukdevelopers007@gmail.com</a>.
           </p>
         </section>
       </div>
