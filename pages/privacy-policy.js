@@ -1,16 +1,12 @@
-// pages/privacy-policy.js
-
 export default function PrivacyPolicy() {
     return (
       <div className="max-w-5xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-center">Privacy Policy</h1>
-        <p className="text-gray-700 mb-6">
-          Last updated: April 15, 2025
-        </p>
+        <p className="text-gray-700 mb-6">Last updated: April 15, 2025</p>
   
         <section className="space-y-6 text-gray-700">
           <p>
-            Welcome to <a href="https://www.ukdevelopers.org" className="text-blue-600 underline">UK Developers</a> (referred to as "we", "our", or "us"). This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services.
+            Welcome to <a href="https://www.ukdevelopers.org" className="text-blue-600 underline">UK Developers</a> (referred to as &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services.
           </p>
   
           <h2 className="text-2xl font-semibold">1. Information We Collect</h2>
@@ -33,7 +29,7 @@ export default function PrivacyPolicy() {
             We do not sell your personal information. We may share your data with trusted third-party service providers (e.g., payment processors, analytics tools) who assist in operating our business, so long as those parties agree to keep this information confidential.
           </p>
   
-          <h2 className="text-2xl font-semibold">4. Cookies & Tracking Technologies</h2>
+          <h2 className="text-2xl font-semibold">4. Cookies &amp; Tracking Technologies</h2>
           <p>
             Our website uses cookies to enhance your experience. You can choose to disable cookies through your browser settings. We also use third-party tools like Google Analytics and Facebook Pixel.
           </p>
@@ -53,7 +49,7 @@ export default function PrivacyPolicy() {
             Our website may contain links to other websites. We are not responsible for the privacy practices of those websites. We encourage you to read their privacy policies.
           </p>
   
-          <h2 className="text-2xl font-semibold">8. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold">8. Children&apos;s Privacy</h2>
           <p>
             Our services are not intended for individuals under the age of 13. We do not knowingly collect data from children.
           </p>
@@ -65,7 +61,7 @@ export default function PrivacyPolicy() {
   
           <h2 className="text-2xl font-semibold">10. Contact Us</h2>
           <p>
-            For any questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:contact@ukdevelopers.org" className="text-blue-600 underline">contact@ukdevelopers.org</a>.
+            For any questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:ukdevelopers007@gmail.com" className="text-blue-600 underline">ukdevelopers007@gmail.com</a>.
           </p>
         </section>
       </div>
