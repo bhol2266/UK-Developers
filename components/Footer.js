@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Footer = () => {
 
-  const router=  useRouter()
+    const router = useRouter()
     return (
 
 
@@ -41,14 +42,29 @@ const Footer = () => {
             <div className="flex md:flex-row flex-col space-y-3 justify-between items-center mt-6 px-[40px]  ">
                 <div className="flex space-x-6 lg:space-x-10 items-center ">
                     <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]   '>Help </h1>
-                    <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>Privacy Policy </h1>
+                    <Link href='/privacy-policy'>
+                        <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>Privacy Policy </h1>
+                    </Link>
 
-                    <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>Disclaimer </h1>
+
+                    <Link href='/RefundCancellation'>
+                        <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>RefundCancellation </h1>
+                    </Link>
+
+
+                    <Link href='/TermsAndConditions'>
+                        <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>TermsAndConditions </h1>
+                    </Link>
+
+
+                    <Link href='/disclaimer'>
+                        <h1 className='cursor-pointer font-assist  text-center text-gray-400 text-[11px] lg:text-[12px] xl:text-[13px]  '>Disclaimer </h1>
+                    </Link>
 
                 </div>
 
 
-                <h1 onClick={()=>{router.push('/forms')}} className='font-assist  text-center text-gray-500 text-[11px] lg:text-[12px] xl:text-[13px] '>Copyright © 2023 Codesout, All rights reserved. </h1>
+                <h1 onClick={() => { router.push('/forms') }} className='font-assist  text-center text-gray-500 text-[11px] lg:text-[12px] xl:text-[13px] '>Copyright © 2023 Codesout, All rights reserved. </h1>
 
             </div>
         </div>
