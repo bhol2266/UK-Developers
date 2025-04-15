@@ -186,10 +186,7 @@ in market." title="Mobile apps" />
 </div>
 
 
-      <div id='footer'>
-
-        <Footer />
-      </div>
+    
 
 
       <div className='hidden' >
