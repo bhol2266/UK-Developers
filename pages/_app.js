@@ -10,7 +10,7 @@ import { useRef, useState } from 'react'
 import React from 'react'
 import Footer from '../components/Footer'
 
-
+import Script from 'next/script'
 
 
 export default function App({ Component, pageProps }) {
@@ -49,6 +49,12 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <Navbar />
+      <Script
+        src={`https://www.paypal.com/sdk/js?client-id=${process.env.PAYPAL_CLIENT_ID}&currency=USD&intent=capture&components=buttons,funding-eligibility`}
+        strategy="beforeInteractive"
+      />
+
+     
       <Component {...pageProps} />
 
       <div className={`${messageBox ? "bg-white shadow" : ""}  rounded-lg py-4  cursor-pointer  fixed bottom-2 left-2 z-10 lg:bottom-5 lg:left-5  flex items-center space-x-3 lg:space-x-4`}>

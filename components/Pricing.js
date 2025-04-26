@@ -22,7 +22,7 @@ const Pricing = () => {
 
 
                 <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
-                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$150</h1>
+                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>₹10000</h1>
 
 
                     <h2 className='font-inter font-semibold text-left text-white text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]  my-2'>Basic Plan</h2>
@@ -70,7 +70,7 @@ const Pricing = () => {
 
 
                 <div className='relative lg:bottom-10 xl:bottom-14  lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
-                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$500</h1>
+                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>₹30000</h1>
 
 
                     <h2 className='font-inter font-semibold text-left text-white text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]  my-2'>Value Plan</h2>
@@ -118,7 +118,7 @@ companies or businesses. </h2>
 
 
                 <div className='lg:p-6 lg:pl-8 p-4 pl-8 2xl:pl-[50px] xl:pl-6  xl:py-10 shadow-md shadow-gray-500 border-2 border-white rounded-[25px] w-full mt-8  mx-auto'>
-                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>$2000</h1>
+                    <h1 className='font-inter font-semibold text-left text-white text-[26px] lg:text-[30px] xl:text-[38px] 2xl:text-[40px] '>₹50000</h1>
 
 
                     <h2 className='font-inter font-semibold text-left text-white text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]  my-2'>Premium Plan Plan</h2>
