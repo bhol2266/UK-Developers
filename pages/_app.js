@@ -54,8 +54,8 @@ export default function App({ Component, pageProps }) {
         strategy="beforeInteractive"
       />
 
-     
-      <Component {...pageProps} />
+
+        <Component {...pageProps} />
 
       <div className={`${messageBox ? "bg-white shadow" : ""}  rounded-lg py-4  cursor-pointer  fixed bottom-2 left-2 z-10 lg:bottom-5 lg:left-5  flex items-center space-x-3 lg:space-x-4`}>
         <ReactWhatsapp id='ReactWhatsapp' number="91-910-882-5914" message={message} />

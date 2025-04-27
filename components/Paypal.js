@@ -1,14 +1,15 @@
-// pages/membership.js
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
-export default function Paypal() {
+export default function Paypal({ selectedPlan, email, name, phonenumber, source }) {
+  if (!selectedPlan) return <div>Loading Plan Details...</div>;
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md text-center">
         <h1 className="text-2xl font-bold mb-4">Buy Membership</h1>
-        <p className="mb-6 text-gray-700">Get full access for $1.99 per month</p>
+        <p className="mb-6 text-gray-700">{`Get full access for ${selectedPlan.price} for ${selectedPlan.duration}`}</p>
 
-        <PayPalScriptProvider options={{ "client-id": process.env.PAYPAL_CLIENT_ID }}>
+        <PayPalScriptProvider options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}>
           <PayPalButtons
             style={{ layout: "vertical", color: "blue", shape: "rect", label: "paypal" }}
             createOrder={(data, actions) => {
@@ -16,16 +17,15 @@ export default function Paypal() {
                 purchase_units: [
                   {
                     amount: {
-                      value: "1.99",
+                      value: selectedPlan.amount.toString(),
                     },
                     description: "Premium Membership",
-                    // simulate digital goods
                     category: "DIGITAL_GOODS",
                   },
                 ],
                 application_context: {
-                  shipping_preference: "NO_SHIPPING", // no shipping
-                  user_action: "PAY_NOW", // no final review screen
+                  shipping_preference: "NO_SHIPPING",
+                  user_action: "PAY_NOW",
                 },
               });
             }}
