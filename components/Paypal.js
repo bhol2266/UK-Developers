@@ -9,7 +9,9 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
         <h1 className="text-2xl font-bold mb-4">Buy Membership</h1>
         <p className="mb-6 text-gray-700">{`Get full access for ${selectedPlan.price} for ${selectedPlan.duration}`}</p>
 
-        <PayPalScriptProvider options={{ "client-id": "AQEfZ9BtOjDaH-FAfZX-yRRFO7RmeSyNycJmJ8IiykzjBWGEKF_5yQJs-xagJEAT0D_fI-7GVdlYrrtX" }}>
+        <PayPalScriptProvider options={{ "client-id": "ASN99XzcW29Fc1Q2lxqtsdEOZt4fP7zg5dXV0dPpw-PPnFR1pYJpib6GOpdx_4BPb9k9glN0eJQSNKe4" }}>
+
+          
           <PayPalButtons
             style={{ layout: "vertical", color: "blue", shape: "rect", label: "paypal" }}
             createOrder={(data, actions) => {
