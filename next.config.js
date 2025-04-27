@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    PAYPAL_CLIENT_ID: 'ASN99XzcW29Fc1Q2lxqtsdEOZt4fP7zg5dXV0dPpw-PPnFR1pYJpib6GOpdx_4BPb9k9glN0eJQSNKe4',
-    PAYPAL_CLIENT_SECRET: 'EFue_Mer__aqqsfcOhRLveTS_AZnATQsMVF8imzL2XZNCbSnJegBkTBT8toC8EjBfPn3LulGOd4XltN-',
+    PAYPAL_CLIENT_ID: 'AQEfZ9BtOjDaH-FAfZX-yRRFO7RmeSyNycJmJ8IiykzjBWGEKF_5yQJs-xagJEAT0D_fI-7GVdlYrrtX',
+    PAYPAL_CLIENT_SECRET: 'EHdwoyfs3cRT6bFCDBgnwIQR67PW8C4AK5spurQoW7A92YBNUPodWG_vtz5XRfBhMouwisgZPVn5ltaV',
     PAYPAL_ENDPOINT: 'https://api-m.sandbox.paypal.com'
   },
 }

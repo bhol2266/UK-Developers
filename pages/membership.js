@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
 import PaymentCheckout from '../components/PaymentCheckout';
+import Paypal from '../components/Paypal';
 
 
 
@@ -140,9 +141,10 @@ const Membership = () => {
 
 
             </div>
-            <div className={`${HideEverything ? "hidden" : "block"}`} >
+            <div className={`${HideEverything ? "block" : "block"}`} >
 
-                <PaymentCheckout selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber} />
+                <Paypal selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber} />
+                {/* <PaymentCheckout selectedPlan={selectedPlan} source={source} email={email} name={name} phonenumber={phonenumber} /> */}
             </div>
         </div>
     )
