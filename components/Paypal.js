@@ -19,8 +19,8 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
                 purchase_units: [
                   {
                     amount: {
-                      // value: selectedPlan.amount.toString(),
-                      value: "1.59",
+                      value: selectedPlan.amount.toString(),
+                      // value: "1.59",
                     },
                     description: "Premium Membership",
                     category: "DIGITAL_GOODS",
