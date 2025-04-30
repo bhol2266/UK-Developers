@@ -53,7 +53,7 @@ const Membership = () => {
 
     const [selectedPlan, setSelectedPlan] = useState(plans[0])
     const [HideEverything, setHideEverything] = useState(true)
-    
+
     useEffect(() => {
         if (!planAmount || !planCode) {
             console.warn("Missing query parameters: planAmount or planCode not found in router.query");
@@ -68,7 +68,7 @@ const Membership = () => {
             console.warn("No matching plan found for planCode:", planCode);
         }
         if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
-            window.history.pushState(null, '', `https://${source}.com/checkout`);
+            // window.history.pushState(null, '', `https://${source}.com/checkout`);
             setHideEverything(true)
         }
 
