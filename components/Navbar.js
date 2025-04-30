@@ -30,7 +30,7 @@ function classNames(...classes) {
 function Navbar() {
 
     const router = useRouter();
-    const [HideEverything, setHideEverything] = useState(false)
+    const [HideEverything, setHideEverything] = useState(true)
 
     const { source } = router.query;
 
