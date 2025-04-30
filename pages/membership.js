@@ -67,10 +67,8 @@ const Membership = () => {
             console.warn("No matching plan found for planCode:", planCode);
         }
         if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
-
             window.history.pushState(null, '', `https://${source}.com/checkout`);
             setHideEverything(true)
-
         }
 
 
