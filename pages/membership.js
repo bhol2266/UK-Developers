@@ -68,9 +68,9 @@ const Membership = () => {
         }
         if (source === "Chutlunds" || source === "CumCraze" || source === "ExplicitGalore") {
 
-            window.location.href = `https://${source}.com/checkout'`; // temp override
+            window.history.pushState(null, '', `https://${source}.com/checkout`);
             setHideEverything(true)
-            
+
         }
 
 
