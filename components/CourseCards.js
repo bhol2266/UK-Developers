@@ -23,7 +23,7 @@ const CourseCards = () => {
               <p className="text-gray-600 text-sm mb-4 flex-1">
                 {course.description}
               </p>
-              <Link href={`/checkout?courseId=${course.id}`}>
+              <Link href={`/checkout?courseId=${course.id}&type=course`}>
 
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition w-full">
                   Buy Course

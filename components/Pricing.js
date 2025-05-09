@@ -3,6 +3,7 @@ import {
 
 } from '@heroicons/react/outline'
 import { useEffect, useState } from 'react';
+import ConsultingFeeButton from './ConsultingFeeButton';
 
 
 // const [basicPrice, setbasicPrice] = useState("$150");
@@ -76,8 +77,8 @@ const Pricing = () => {
                     <h2 className='font-inter font-semibold text-left text-white text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]  my-2'>Value Plan</h2>
 
 
-                    <h2 className='mb-4 font-inter text-left text-white text-[11px] lg:text-[13px] xl:text-[16px] 2xl:text-[18px]  '>Perfect for small & medium 
-companies or businesses. </h2>
+                    <h2 className='mb-4 font-inter text-left text-white text-[11px] lg:text-[13px] xl:text-[16px] 2xl:text-[18px]  '>Perfect for small & medium
+                        companies or businesses. </h2>
 
 
                     <div className='flex flex-col  space-y-3 lg:space-y-5 xl:space-y-7'>
@@ -167,7 +168,7 @@ companies or businesses. </h2>
 
             </div>
 
-
+            <ConsultingFeeButton />
 
         </div>
     )

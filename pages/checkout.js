@@ -42,7 +42,7 @@ export const courses = [
 
 export default function CheckoutPage() {
   const router = useRouter();
-  const { courseId } = router.query;
+  const { courseId ,type} = router.query;
 
   const course = courses.find((c) => c.id === courseId);
 
