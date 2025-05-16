@@ -18,6 +18,7 @@ var navigation = [
     { name: 'Contact us', href: '#footer', current: false },
     { name: 'About us', href: '#aboutus', current: false },
     { name: 'Our Courses', href: '#courses', current: false },
+    { name: 'Checkout', href: '/checkout?courseId=mobile-dev&type=course', current: false },
     // { name: 'Live Cams', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
     // { name: 'Meet & Fuck', href: "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers", current: false },
 ]

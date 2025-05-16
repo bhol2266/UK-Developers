@@ -48,7 +48,7 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     if (!courseId || !course) {
-      router.push('/');
+      // router.push('/');
     }
   }, [courseId, course, router]);
 
