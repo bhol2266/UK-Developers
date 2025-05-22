@@ -144,7 +144,7 @@ in market." title="Mobile apps" />
         </div>
 
 
-        {/* Pricing  */}
+        {/* Pricing  */}  
 
         {/* <div id='pricing' className='mt-14 lg:mt-28'>
           <Pricing />
