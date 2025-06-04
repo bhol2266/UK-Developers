@@ -164,7 +164,7 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
 
       <button
         onClick={handleDummyActivation}
-        className="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 "
+        className="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hidden"
       >
         🔧 Test Activation Without Payment
       </button>
