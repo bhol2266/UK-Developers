@@ -36,8 +36,8 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
     const expiryDate = calculateExpiryDate(selectedPlan.duration);
 
 
-    const dummyEmail = "ramshah11223344@gmail.com"
-    const dummyName = "Anand Chaudhary"
+    const dummyEmail = "ultimate.mortal.kombat.x@gmail.com"
+    const dummyName = "mortal kombat"
     const dummyPhonenumber = "1234567890"
 
 
@@ -164,7 +164,7 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
 
       <button
         onClick={handleDummyActivation}
-        className="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hidden"
+        className="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 "
       >
         🔧 Test Activation Without Payment
       </button>
