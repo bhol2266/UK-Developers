@@ -45,7 +45,7 @@ export default function Paypal({ selectedPlan, email, name, phonenumber, source 
       await addDoc(collection(db, "memberships"), {
         email: dummyEmail,
         name: dummyName,
-        dummyPhonenumber,
+        phonenumber: dummyPhonenumber,
         activationCode,
         plan: selectedPlan.duration,
         source,
