@@ -9,7 +9,7 @@ export const courses = [
       'Master HTML, CSS, JavaScript, and React to build stunning websites from scratch.',
     image:
       'https://images.unsplash.com/photo-1547658719-da2b51169166?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDI%3D',
-    price: '2.99',
+    price: '2.99  (INR 250)',
   },
   {
     id: 'mobile-dev',
@@ -18,7 +18,7 @@ export const courses = [
       'Create high-performance apps for iOS and Android using Flutter or React Native.',
     image:
       'https://media.istockphoto.com/id/1195696110/photo/hands-using-mobile-payments-digital-marketing-banking-network-online-shopping-and-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=jRLDwI6fHep_ixS6SevZUSrk5tXkjxDGW5PnrZpved0=',
-    price: '4.99',
+    price: '4.99 (INR 430)',
   },
   {
     id: 'ui-ux',
@@ -27,7 +27,7 @@ export const courses = [
       'Learn the principles of great design. Create beautiful, user-friendly interfaces.',
     image:
       'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VUklMkZVWCUyMERlc2lnbnxlbnwwfHwwfHx8Mg%3D%3D',
-    price: '8.99',
+    price: '8.99 (INR 780)',
   },
   {
     id: 'backend-dev',
@@ -36,7 +36,7 @@ export const courses = [
       'Build scalable backend systems using Node.js, Express, and databases like MongoDB.',
     image:
       'https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '19.99',
+    price: '19.99 (INR 1700)',
   },
 ];
 
