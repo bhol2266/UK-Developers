@@ -71,7 +71,7 @@ function Navbar() {
 
 
 
-                                        <Link href='#pricing'>
+                                        <Link href='#courses'>
                                             <p className=' text-[14px] xl:text-[16px] 2xl:text-[18px] text-textMain font-inter cursor-pointer hover:text-red-800      '>Pricing</p>
                                         </Link>
 
